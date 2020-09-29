@@ -114,16 +114,16 @@ img {
 /* fine esercizio normale */
 
 
-/* inizio parte bonus */
+/* inizio parte bonus, dalle slide si vede che l'ipad orizzontale ha 1024px, quindi teniamolo come limite massimo*/
 
-@media screen and (min-width: 421px) and (max-width: 1000px) {
+@media screen and (min-width: 421px) and (max-width: 1024px) {
   .row {
     width: 100%;
   }
 }
 
-/* nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
-@media screen and (min-width: 421px) and (max-width: 1000px) {
+/* nel blocco delle lezioni vedo che ci sono due div che con circa 700px di larghezza stanno a fianco bene senza necessità di andare a capo */
+@media screen and (min-width: 421px) and (max-width: 700px) {
   #lezioni .row>.left,
   #lezioni .row>.right {
     float: none;
@@ -131,7 +131,7 @@ img {
   }
 }
 
-@media screen and (min-width: 421px) and (max-width: 652px) {
+@media screen and (min-width: 421px) and (max-width: 1024px) {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
