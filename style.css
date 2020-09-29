@@ -115,3 +115,27 @@ img {
 
 
 /* inizio parte bonus */
+
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+  .row {
+    width: 100%;
+  }
+}
+
+/* nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 652px) {
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+}
