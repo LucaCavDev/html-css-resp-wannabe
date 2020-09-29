@@ -114,16 +114,15 @@ img {
 /* fine esercizio normale */
 
 
-/* inizio parte bonus, dalle slide si vede che l'ipad orizzontale ha 1024px, quindi teniamolo come limite massimo*/
+/* bonus: dalle slide si vede che l'ipad ha 768px di larghezza se tenuto verticalmente, quindi teniamolo come limite massimo teorico per l'esercizio */
 
-@media screen and (min-width: 421px) and (max-width: 1024px) {
+@media screen and (min-width: 421px) and (max-width: 768px) {
   .row {
     width: 100%;
   }
 }
 
-/* nel blocco delle lezioni vedo che ci sono due div che con circa 700px di larghezza stanno a fianco bene senza necessità di andare a capo */
-@media screen and (min-width: 421px) and (max-width: 700px) {
+@media screen and (min-width: 421px) and (max-width: 768px) {
   #lezioni .row>.left,
   #lezioni .row>.right {
     float: none;
@@ -131,7 +130,32 @@ img {
   }
 }
 
-@media screen and (min-width: 421px) and (max-width: 1024px) {
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+/* in conclusione, bastava ampliare la width d'interesse estendendo i selettori css nuovi dell'esercizio normale ad una larghezza di 768px */
+
+/* per visualizzare correttamente da 769px fino a 1024px di larghezza (1024 larghezza tablet da orizzontale) vanno inseriti altri selettori css media. oltre i 1024 non serve fare altro  */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .row {
+    width: 100%;
+  }
+}
+
+/* nel blocco delle lezioni vedo che ci sono due div che con circa 800px di larghezza stanno a fianco bene senza necessità di andare a capo quindi non intervengo sul css base*/
+
+
+/* nel blocco degli step vedo che anche qui con 700px di larghezza stanno a fianco bene i tre div senza necessità di andare a capo */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
