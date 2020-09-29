@@ -71,3 +71,46 @@ img {
 .clear {
   clear: both;
 }
+
+/* INIZIA L'ESERCIZIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+/* dato che row ha larghezza fissa a 920px, l'adatto dandole una width al 100% */
+@media screen and (max-width: 420px) {
+  .row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none; /*tolgo il float ai div left e right dentro a row e li faccio andare a capo*/
+    width: 100%;  /*faccio occupare tutto lo spazio disponibile ai div left e right */
+  }
+}
+
+/* faccio esattamente la stessa cosa per i div left central e right della sezione steps */
+@media screen and (max-width: 420px) {
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* blocco why già a posto dato che sono in verticale i 3 div first second e third */
+
+/* tolgo i 30 px di padding dall'immagine nei why per centrarele  meglio */
+@media screen and (max-width: 420px) {
+  #why .row img {
+    padding: 0px;
+  }
+}
+
+
+
+/* fine esercizio normale */
+
+
+/* inizio parte bonus */
