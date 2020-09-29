@@ -74,13 +74,14 @@ img {
 
 /* INIZIA L'ESERCIZIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 
-/* dato che row ha larghezza fissa a 920px, l'adatto dandole una width al 100% */
+/* dato che row ha larghezza fissa a 992px, l'adatto dandole una width al 100% */
 @media screen and (max-width: 420px) {
   .row {
     width: 100%;
   }
 }
 
+/* parto dal primo blocco, le lezioni */
 @media screen and (max-width: 420px) {
   #lezioni .row>.left,
   #lezioni .row>.right {
@@ -99,7 +100,7 @@ img {
   }
 }
 
-/* blocco why già a posto dato che sono in verticale i 3 div first second e third */
+/* il blocco why già a posto dato che sono in verticale i 3 div first second e third */
 
 /* tolgo i 30 px di padding dall'immagine nei why per centrarele  meglio */
 @media screen and (max-width: 420px) {
