@@ -154,11 +154,9 @@ img {
 /* nel blocco delle lezioni vedo che ci sono due div che con circa 800px di larghezza stanno a fianco bene senza necessità di andare a capo quindi non intervengo sul css base*/
 
 
-/* nel blocco degli step vedo che anche qui con 700px di larghezza stanno a fianco bene i tre div senza necessità di andare a capo */
+/* nel blocco degli steps vedo che per lo meno left e central possono stare a fianco facendo andare a capo solamente right */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
+  #steps .row>.central {
     float: none;
     width: 100%;
   }
